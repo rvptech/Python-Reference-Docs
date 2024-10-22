@@ -45,4 +45,7 @@ items = "Lemon, Mint, Ginger, Masala"
 cartData = items.split(", ")
 print(cartData)
 
-print(type(cartData))
+
+print(items.find("Mint"))  # Used to find a word in a tring, if not found will return -1.
+
+print(items.count("M")) # counts the occurence of the character
