@@ -4,11 +4,13 @@
 
 <mark>NOTE : Use whitespaces and indentation correctly</mark>
 
-- Python was created by Guido Van Rossum, 1991.
+- Python was created by Guido Van Rossum, 1991. (case sensitive language)
 
 - Python is a high level, interpreted, object oriented programming language known for its simplicity and readability. 
 
 - Python is widely used for web development, data analysis and automation.
+
+- Everything in Python is an object.
 
 ### Indentation:
 
@@ -16,15 +18,20 @@
 
 ### DataTypes :
 
-- Numbers : Integer, Float, Complex Numbers
-- Sequence : String, List and Tuple
-- Dictionary
-- Boolean
-- Set
+- Numbers : Integer(int), Float(float), Complex Numbers
+- Sequence : String(str), List(list) and Tuple(tup)
+- Dictionary(dict)
+- Boolean(bool)
+- Set(set)
 
 - List, Dictionary and Set are mutable datatypes, remaining are immutable.
 
 <mark>NOTE : Everything in Python is an Object</mark>
+
+<mark>NOTE :Garbage collection of datatype "number" and "string" is always delayed by python (exception).
+            Python waits for sometime for only these two datatypes, wherein user might reuse the same
+            data again in the same code. [ Immediate garbage collection does not happen ]
+</mark>
 
 ### Type casting :
 
@@ -34,8 +41,12 @@
 
 <mark>NOTE : If datatypes are not compatible for conversion, python will throw an error (Type error)</mark>
 
+- Explicit conversion is manually done by developers using Python functions. str(), int(), float() etc..
 
-### Python - Variable Names:
+### Variables:
+
+- Variable is a named place in the memory where a programmer can store data and later retrieve the data using
+the variable name.
 
 <mark>NOTE : Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.</mark>
 
