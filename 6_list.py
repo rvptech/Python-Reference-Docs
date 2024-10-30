@@ -42,3 +42,6 @@ print(teaItems)
 
 newTeaData = teaItems.copy() # copy of the list is created and associated to a new variable. Most commonly used to seperate the memory ref of both the lists.
 print(newTeaData)
+
+
+print(teaItems.count("Black")) # returns the count of items in the list

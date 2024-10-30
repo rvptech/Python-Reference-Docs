@@ -29,3 +29,47 @@ for keyData, valData in myData.items(): # alternate method wherein you can acces
     
 myData["Education"]="MBA" # adds a new item (key:value pair) to the dictionary
 print(myData)
+
+myData.pop("age") # pops out the item, based on the key provided
+print(myData)
+
+del myData["name"] # deletes a specific item from dictionary
+print(myData)
+
+newData = myData.copy() # copy of the dict is created and associated to a new variable. Most commonly used to seperate the memory ref of both the dict.
+print(newData)
+
+# Nested Dictionary:
+
+myData2 = {
+    "user1" : {
+        "name":"Alex",
+        "age":25,
+        "gender":"male"
+    },
+    "user2" : {
+        "name":"Nitin",
+        "age":42, 
+        "gender":"male"
+    },
+    "user3" : {
+        "name":"Mohan",
+        "age":38,
+        "gender":"male"
+    }
+}
+
+print(myData2["user2"]["name"])
+
+# Example (exceptional)
+sqdnum = {x:x**2 for x in range(0,10)}
+print(sqdnum)
+
+
+# Constructing a new dictionary from list
+
+chai = ["lemon", "ginger", "green"]
+defaultVal = "delicious"
+
+myDict = dict.fromkeys(chai, defaultVal)
+print(myDict)
