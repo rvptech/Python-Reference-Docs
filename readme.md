@@ -6,7 +6,7 @@
 
 - Python was created by Guido Van Rossum, 1991. (case sensitive language)
 
-- Python is a high level, interpreted, object oriented programming language known for its simplicity and readability. 
+- Python is a high level, interpreted, object oriented programming language known for its simplicity and readability.
 
 - Python is widely used for web development, data analysis and automation.
 
@@ -29,8 +29,8 @@
 <mark>NOTE : Everything in Python is an Object</mark>
 
 <mark>NOTE :Garbage collection of datatype "number" and "string" is always delayed by python (exception).
-            Python waits for sometime for only these two datatypes, wherein user might reuse the same
-            data again in the same code. [ Immediate garbage collection does not happen ]
+Python waits for sometime for only these two datatypes, wherein user might reuse the same
+data again in the same code. [ Immediate garbage collection does not happen ]
 </mark>
 
 ### Type casting :
@@ -46,19 +46,24 @@
 ### Variables:
 
 - Variable is a named place in the memory where a programmer can store data and later retrieve the data using
-the variable name.
+  the variable name.
 
 <mark>NOTE : Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.</mark>
 
 - A variable name must start with a letter or the underscore character
 - A variable name cannot start with a number
-- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and \_ )
 - Variable names are case-sensitive (age, Age and AGE are three different variables)
 - A variable name cannot be any of the Python keywords.
-
 
 #### Global Variables:
 
 - Variables that are created outside of a function (as in all of the examples in the previous pages) are known as global variables.
 
 - Global variables can be used by everyone, both inside of functions and outside.
+
+#### The global Keyword :
+
+- Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+
+- To create a global variable inside a function, you can use the global keyword.
