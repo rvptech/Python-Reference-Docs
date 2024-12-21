@@ -1,4 +1,6 @@
 
+# Lists are used to store multiple items in a single variable.
+
 teaItems = ["Black", "Green", "White"]
 
 print(teaItems[0]) # slicing works in lists in the same way as strings
@@ -9,6 +11,7 @@ print(teaItems)   # replace items in a list using direct index value
 
 teaItems[1:2] = ["Lemon"]
 print(teaItems)  # alternate way to replace items in a list, using slicing method
+
 
 for teaData in teaItems:
     print(teaData)      # loops over every items in the list
@@ -33,6 +36,11 @@ popIteam = teaItems.pop() # pops out the last item from the list
 print(teaItems)
 print(popIteam)
 
+
+popIteam = teaItems.pop(1) # pop() method removes the specified index.
+print(teaItems)
+print(popIteam)
+
 teaItems.remove("Green") # removes specific item from the list
 print(teaItems)
 
@@ -45,3 +53,35 @@ print(newTeaData)
 
 
 print(teaItems.count("Black")) # returns the count of items in the list
+
+
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)       # To append elements from another list to the current list, use the extend( method.
+print(thislist)
+
+
+del thislist   # The del keyword can also delete the list completely.
+
+thislist.clear()
+print(thislist)   # The clear() method empties the list. The list still remains, but it has no content.
+
+
+[print(x) for x in thislist] # List Comprehension offers the shortest syntax for looping through lists
+
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()   # sort() method will sort the list alphanumerically in ascending order
+print(thislist)
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)   # To sort descending, use the keyword argument reverse = True
+print(thislist)
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+list3 = list1 + list2    # Join Two Lists using the + operator
+print(list3)
+
+teaItems = ["Black", "Green", "White"]
+print(teaItems.index("Green")) # Returns the index of the first element with the specified value

@@ -10,11 +10,10 @@ print (sum)
 
 # Python is too good when it comes to numbers (its math friendly)
 
-import math  # imports a math function (method)
+import math  # imports a math module 
 
 data = 3.4
 result = math.floor(data)   # rounds off to closest bottom value
-
 print(result)
 
 

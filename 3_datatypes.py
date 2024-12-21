@@ -1,4 +1,6 @@
 
+# Built-in Datatypes:
+
 myNum = 10      # number
 myCash = 100.1  # float
 myUni = 10+10j  # complex number
